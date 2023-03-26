@@ -1,7 +1,7 @@
 # JS-Interview-Preparation
 
 ## Training Plan
-- [ ] Fundamentals
+- [x] Fundamentals
 - [ ] Code Quality
 - [ ] Objects
 - [ ] Data Types
