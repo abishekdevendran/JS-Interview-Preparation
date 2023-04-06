@@ -2,7 +2,7 @@
 
 ## Training Plan
 - [x] Fundamentals
-- [ ] Code Quality
+- [X] Code Quality
 - [ ] Objects
 - [ ] Data Types
 - [ ] Advanced functions

@@ -1,0 +1,16 @@
+{
+  "name": "codequality",
+  "version": "1.0.0",
+  "description": "Code Quality and testing exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "Abishek Devendran",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  },
+  "type": "module"
+}
