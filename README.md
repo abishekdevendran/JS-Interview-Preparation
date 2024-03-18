@@ -3,8 +3,8 @@
 ## Training Plan
 - [x] Fundamentals
 - [X] Code Quality
-- [ ] Objects
-- [ ] Data Types
+- [X] Objects
+- [X] Data Types
 - [ ] Advanced functions
 - [ ] Object properties
 - [ ] Prototypes, Inheritance
