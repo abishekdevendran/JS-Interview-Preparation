@@ -81,7 +81,7 @@ let usersMapped = users.map((user) => {
 	return { fullName: user.name + ' ' + user.surname, id: user.id };
 });
 
-console.log(usersMapped);
+console.log('usersMapped: ', usersMapped);
 
 function ageSorter(arr) {
 	arr.sort((a, b) => a.age - b.age);
@@ -122,13 +122,73 @@ function uniqueLogger(arr) {
 	// let dict = {};
 	// arr.forEach((word) => (dict[word] = 'yup'));
 	// return Object.keys(dict);
-	return arr.filter((value,idx)=>arr.indexOf(value)===idx)
+	// return arr.filter((value, idx) => arr.indexOf(value) === idx);
+	let words = Array.from(new Set(strings));
+	return words;
 }
 
 console.log(uniqueLogger(strings));
 
 let usersFinal = users.reduce((acc, user) => {
-	acc[user.name]=user
-	return acc
+	acc[user.name] = user;
+	return acc;
 }, {});
 console.log(usersFinal);
+
+let nums = [1, 3, 5, 7, 9];
+// const oongaBunga = 12;
+
+// let sumNums = nums.reduce((acc, num) => {
+// 	if(acc.length === 0){
+// 		acc.push(num + oongaBunga);
+// 		return acc;
+// 	}
+// 	acc.push(num + oongaBunga);
+// 	return acc;
+// }, []);
+// console.log('sunNums is ', sumNums);
+
+for (let prop in john) {
+	console.log(john[prop]);
+}
+
+// Making an iterator
+let iter = {
+	from: 1,
+	to: 10
+};
+
+iter[Symbol.iterator] = function () {
+	return {
+		current: this.from,
+		last: this.to,
+		next() {
+			if (this.current <= this.last) {
+				return { done: false, value: this.current++ };
+			} else {
+				return { done: true };
+			}
+		}
+	};
+};
+
+for (let num of iter) {
+	console.log(num);
+}
+
+let strObj = Object.assign({}, strings);
+console.log(strObj);
+
+let arr = ['nap', 'teachers', 'cheaters', 'PAN', 'ear', 'era', 'hectares'];
+
+function aSort(arr){
+	let watcher = new Map();
+	arr.forEach((val)=>{
+		let ke=val.toLowerCase().split("").sort().join("");
+		watcher.set(ke, val);
+	});
+	return Array.from(watcher.values());
+}
+
+let smolArr = aSort(arr);
+console.log(smolArr)
