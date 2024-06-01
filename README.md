@@ -8,7 +8,7 @@
 - [ ] Advanced functions
 - [ ] Object properties
 - [ ] Prototypes, Inheritance
-- [ ] Classes
+- [x] Classes
 - [ ] Error Handling
 - [ ] Promises, Async/Await
 - [ ] Generators, advanced iteration
